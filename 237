@@ -1,0 +1,6 @@
+class Solution:
+    def deleteNode(self, node):
+        nxt = node.next
+        node.val = nxt.val
+        node.next = nxt.next
+        del nxt
